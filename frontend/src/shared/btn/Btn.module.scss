@@ -1,0 +1,37 @@
+.Btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-weight: 600;
+    transition: 0.5s all ease;
+    background-color: rgb(28, 28, 241);
+    padding: 15px;
+
+    &:hover {
+        background-color: rgb(67, 67, 230);
+    }
+}
+
+.BtnOutLine {
+    background: none;
+    border: none;
+    padding: 15px;
+    color: black;
+    border: solid black 1px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.5s all ease;
+
+    &:focus,
+    &:hover {
+        border-color: blue;
+        background-color: blue;
+        color: white;
+        border-bottom: solid rgb(73, 73, 219) 2px;
+    }
+}

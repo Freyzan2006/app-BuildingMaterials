@@ -1,0 +1,8 @@
+.menu__link {
+    transition: 0.5s color ease;
+
+    &:hover {
+        color: blue;
+    }
+}
+
