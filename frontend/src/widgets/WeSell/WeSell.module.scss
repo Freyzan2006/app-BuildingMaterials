@@ -1,0 +1,47 @@
+.weSell {
+    width: 100%;
+    background-color: white;
+
+    &__body {
+        padding: 35px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    @media (max-width: 1070px) {
+        &__body { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__col h3 {
+        font-size: 40px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    &__row img {
+        width: 150px;
+    }
+}
+
+
+

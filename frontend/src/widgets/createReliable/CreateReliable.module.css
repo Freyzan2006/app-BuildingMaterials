@@ -1,0 +1,26 @@
+.CreateReliable__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.CreateReliable__row {
+    text-align: center;
+}
+
+.CreateReliable__row h3,
+.CreateReliable__row p {
+    max-width: 800px;
+    width: 100%;
+}
+
+.CreateReliable__row h3 {
+    font-size: 50px;
+    color: #004152;
+    font-weight: bold;
+}
+
+.CreateReliable__row p {
+    font-weight: 600;
+}

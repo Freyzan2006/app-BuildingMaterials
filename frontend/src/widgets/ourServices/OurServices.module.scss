@@ -1,0 +1,60 @@
+.OurServices {
+    padding: 35px 0;
+    background-image: url(../../assets/img/sevise_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__body {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    &__left,
+    &__right {
+        max-width: 600px;
+        width: 100%;
+    }
+
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    &__right {
+        display: grid;
+        grid-template-columns: 350px 350px;
+        gap: 30px;
+    }
+
+    @media (max-width: 1310px) {
+        &__right {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    @media (max-width: 1050px) {
+        &__body {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+
+
+
+
+
+

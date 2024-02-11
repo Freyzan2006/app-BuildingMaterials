@@ -1,0 +1,9 @@
+.OurClients__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.OurClients__body h3 {
+    font-size: 40px;
+}

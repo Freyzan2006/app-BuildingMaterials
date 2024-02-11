@@ -1,0 +1,49 @@
+
+.Help__body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 755px) {
+    .Help__body {
+        justify-content: center;
+    }
+}
+
+.Help__col {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+
+.Help__col h3 {
+    color: #004152;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.Help__col p {
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+
+.Help__col button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.Help__col svg {
+    font-size: 30px;
+}

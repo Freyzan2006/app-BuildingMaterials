@@ -1,0 +1,33 @@
+.Partner {
+    width: 100%;
+    padding: 35px 15px;
+    background-image: url("../../assets/img/partner/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__body {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__col {
+        align-self: flex-start;
+        display: flex; 
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        max-width: 500px;
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
