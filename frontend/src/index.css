@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .menu__link {
+    transition: 0.5s color ease;
+}
+
+.menu__link:hover {
+    color: blue;
+} */
+
+/* .Btn {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-weight: 600;
+    transition: 0.5s all ease;
+    background-color: rgb(28, 28, 241);
+    padding: 15px;
+}
+
+.Btn:hover {
+    background-color: rgb(67, 67, 230);
+} */
