@@ -1,0 +1,13 @@
+.InputField {
+    padding: 15px;
+    outline: none;
+    color: grey;
+    font-weight: 600;
+    transition: 0.5s all ease;
+}
+
+.InputField:focus,
+.InputField:hover {
+   background-color: rgba(0, 0, 255, 0.61);
+   color: #fff;
+}

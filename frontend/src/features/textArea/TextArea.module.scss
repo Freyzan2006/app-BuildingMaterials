@@ -1,0 +1,16 @@
+.TextArea {
+    max-width: 300px;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    color: grey;
+    font-weight: 600;
+    max-height: 300px;
+    transition: 0.5s all ease;
+}
+
+.TextArea:focus,
+.TextArea:hover {
+   background-color: rgba(0, 0, 255, 0.61);
+   color: #fff;
+}

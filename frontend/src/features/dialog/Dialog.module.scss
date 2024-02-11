@@ -1,0 +1,49 @@
+
+.Dialog,
+.DialogHidden {
+    background-color: rgba(0, 0, 0, 0.822);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+    transition: 0.5s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dialog {
+    transform: translateY(0);
+}
+
+.DialogHidden {
+    transform: translateY(-200%);
+}
+
+.Dialog__cross {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: 0.5s color ease;
+    font-size: 30px;
+}
+
+.Dialog__cross:hover {
+    color: blue;
+}
+
+.Dialog__body {
+    max-width: 300px;
+    width: 100%;
+    min-height: 300px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}

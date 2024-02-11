@@ -1,0 +1,67 @@
+.ProductItem {
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+
+    @media (max-width: 555px) {
+        & {
+            flex-direction: column;
+        }
+    }
+
+    &__left,
+    &__right {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    &__left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__right h3 {
+        font-size: 25px;
+        color: blue;
+        font-weight: bold;
+    }
+
+    &__right table {
+        border: solid 1px gray;
+    }
+
+    &__right table td,
+    &__right table tr {
+        border: solid 1px gray;
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
