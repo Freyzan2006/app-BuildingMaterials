@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import css from "./OurClients.module.css";
 import { Container, TitleText } from "../../shared";
@@ -13,10 +13,6 @@ import { Carusel } from "../../features";
 
 
 
-// import { IoIosArrowBack } from "react-icons/io";
-// import { IoIosArrowForward } from "react-icons/io";
-// import { RxDotFilled } from "react-icons/rx";
-
 interface ISlide {
     url: string
 }
@@ -24,31 +20,12 @@ interface ISlide {
 
 export const OurClients: React.FC = () => {
 
-    const slides = [
+    const slides: ISlide[] = [
         {url: img},
         {url: img2},
         {url: img3},
         {url: img4},
     ]
-
-
-    // const [ currentIndex, setCurrentIndex ] = useState(0);
-
-    // const prevSlide = () => {
-    //     const isFirstSlide = currentIndex === 0;
-    //     const newIndex = isFirstSlide ? slides.length -1 : currentIndex - 1;
-    //     setCurrentIndex(newIndex);
-    // }
-
-    // const nextSlide = () => {
-    //     const isLastSlide = currentIndex === slides.length - 1;
-    //     const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    //     setCurrentIndex(newIndex);
-    // }
-
-    // const goToSlide = (slideIndex: number) => {
-    //     setCurrentIndex(slideIndex);
-    // }
 
     return (
         <section className = { css.OurClients }>

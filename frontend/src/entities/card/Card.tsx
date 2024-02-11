@@ -16,7 +16,7 @@ interface IItem {
 }
 
 export const Card: React.FC<IProps> = ( { item } ) => {
-    const { id, name, anons, about, photo } = item as IItem;
+    const { id, name, anons, photo } = item as IItem;
 
 
     return (

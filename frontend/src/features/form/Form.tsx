@@ -49,8 +49,8 @@ export const Form: React.FC<IProps> = ({ children, method, url, enctype, callbac
         }
 
         try {
-            console.log(data)
-            const response = await axios.post(baseUrl, data);
+            
+            await axios.post(baseUrl, data);
             
         } catch (error) {
             console.error('Error:', error);

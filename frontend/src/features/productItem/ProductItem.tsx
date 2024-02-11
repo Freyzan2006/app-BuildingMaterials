@@ -24,12 +24,23 @@ interface IProductItem {
 
 
 export const ProductItem: React.FC<IProps> = ({ item }) => {
-    const { id, name, category, city, size, photo, about } = item as IProductItem;
+    const { name, category, city, size, photo, about } = item as IProductItem;
 
 
     const [isShow, setIsShow] = useState<boolean>(false);
 
     const showChange = () => setIsShow(!isShow);
+
+    interface IData {
+        name: string
+        number_client: string
+        comment: string
+    }
+
+    const [formData, setFormData] = useState<IData>({name: "", number_client: "", comment: ""});
+    const ChangeData = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData({ ...formData, [(e.target as HTMLInputElement).name]: (e.target as HTMLInputElement).value })
+    };
 
     return (
         <div className = { css.ProductItem }>
@@ -65,10 +76,10 @@ export const ProductItem: React.FC<IProps> = ({ item }) => {
 
             <Dialog isShow = { isShow } showChange = { showChange }>
                 <TitleText color = "#004152" size="25px">Оставить заявку</TitleText>
-                <Form method="post" url="...">
-                    <InputField placeHolder = "Ваше имя" name = "name" />
-                    <InputField placeHolder = "Контактный номер" name = "contact" />
-                    <TextArea name = "fidback" placeHolder = "Коментрии" />
+                <Form method="post" url="clients" data = { formData }>
+                    <InputField value = { formData.name } callback = { (e: React.ChangeEvent<HTMLInputElement>) => ChangeData(e) }  placeHolder = "Ваше имя" name = "name" />
+                    <InputField value = { formData.number_client } callback = { (e: React.ChangeEvent<HTMLInputElement>) => ChangeData(e) }  placeHolder = "Контактный номер" name = "number_client" />
+                    <TextArea value = { formData.comment } callback = { (e: React.ChangeEvent<HTMLTextAreaElement>) => ChangeData(e) } name = "comment" placeHolder = "Коментрии" />
                 </Form>
             </Dialog>
         </div>

@@ -51,7 +51,7 @@ export const Carusel: React.FC<IProps> = ({ slides_urls, width, height }) => {
 
             <div className = "flex top-4 justify-center py-2 absolute bottom-0 -translate-x-0 translate-y-[70%] ">
                 { slides.map((slide: ISlide, slideIndex: number) => (
-                    <div key = { slideIndex } onClick = {() => goToSlide(slideIndex)} className = "text-2xl cursor-pointer py-2">
+                    <div key = { slideIndex } onClick = {() => goToSlide(slideIndex)} className = {"text-2xl cursor-pointer py-2 " + slide}>
                         <RxDotFilled color = { slideIndex == currentIndex ? "black" : "rgba(0, 0, 0, 0.377)" } />
                     </div>
                 ))}
